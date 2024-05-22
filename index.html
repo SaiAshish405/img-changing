@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id1">
+        <img src="./vk6.jpg" id="img1" style="width:300px;height:300px;box-shadow: 0 0 5px; margin-left: 38vw;"></div>
+        <br>
+        <br>
+    <div id="id2" style="display: flex; margin-left: 19vw; ">
+        <img src="./vk4.jpg" id="img2" style="width:200px;height:200px;box-shadow: 0 0 5px;">
+        <img src="./vk7.jpg" id="img3"style="width:200px;height:200px;box-shadow: 0 0 5px;">
+        <img src="./vk8.jpg"  id="img4" style="width:200px;height:200px;box-shadow: 0 0 5px;">
+        <img src="./vk3.jpg" id="img5" style="width: 200px; height: 200px; box-shadow: 0 0 5px;">
+    </div>
+    <script>
+        img1=document.getElementById("img1")
+        img2=document.getElementById("img2")
+        img3=document.getElementById("img3")
+        img4=document.getElementById("img4")
+        img5=document.getElementById("img5")
+        img2.addEventListener("click" ,() =>{
+            img1.setAttribute("src","./vk4.jpg")
+        })
+        img3.addEventListener("click" ,() =>{
+            img1.setAttribute("src","./vk7.jpg")
+        })
+        img4.addEventListener("click" ,() =>{
+            img1.setAttribute("src","./vk8.jpg")
+        })
+        img5.addEventListener("click",()=>{
+            img1.setAttribute("src","./vk3.jpg")
+        })
+    </script>
+</body>
+</html>
